@@ -4,9 +4,9 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-public class MenuHandler : MonoBehaviour
+public class MenuUIHandler : MonoBehaviour
 {
-    public static MenuHandler data;
+    public static MenuUIHandler data;
     public TMP_InputField inputField;
 
     public string playerName;
@@ -22,7 +22,15 @@ public class MenuHandler : MonoBehaviour
 
     public void SetName()
     {
-        playerName = inputField.text;
-        SceneManager.LoadScene(1);
+        //ENCAPSULATION
+        if (inputField.text.Length > 10)
+        {
+            Debug.LogError("Name must be at most ten characters long!");
+        }
+        else
+        {
+            playerName = inputField.text;
+            SceneManager.LoadScene(1);
+        }
     }
 }

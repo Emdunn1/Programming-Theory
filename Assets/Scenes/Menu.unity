@@ -261,7 +261,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1031402215}
-        m_TargetAssemblyTypeName: MenuHandler, Assembly-CSharp
+        m_TargetAssemblyTypeName: MenuUIHandler, Assembly-CSharp
         m_MethodName: SetName
         m_Mode: 1
         m_Arguments:
@@ -879,7 +879,7 @@ GameObject:
   - component: {fileID: 1031402214}
   - component: {fileID: 1031402215}
   m_Layer: 0
-  m_Name: MenuHandler
+  m_Name: MenuUIHandler
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
